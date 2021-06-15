@@ -1740,6 +1740,16 @@ public class IndicatorSeekBar extends View {
     }
 
     /**
+     * set the seek bar's progress's color.
+     *
+     * @param progressColor colorInt
+     */
+    public void progressColor(@ColorInt int progressColor) {
+        this.mProgressTrackColor = progressColor;
+        invalidate();
+    }
+    
+    /**
      * set the seek bar's thumb's selector color.
      *
      * @param thumbColorStateList color selector
